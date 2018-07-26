@@ -1,0 +1,11 @@
+<p>
+  padination-demo works!
+</p>
+
+<ol>
+  <li *ngFor="let item of collections | paginate:{ itemsPerPage:10 , currentPage:p }"> {{item}} </li> 
+</ol>
+   <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+
+

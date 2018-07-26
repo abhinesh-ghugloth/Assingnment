@@ -1,0 +1,18 @@
+<ag-grid-angular 
+    style="width: 1000px; height: 600px;" 
+    class="ag-theme-balham"
+   
+    [columnDefs]="columnDefs"
+    [enableSorting]="true"
+    [animateRows]="true"
+    [pagination]="true"
+    [sortingOrder]="sortingOrder"
+    [enableFilter]="true"
+    (gridReady)="onGridReady($event)"
+    >
+</ag-grid-angular>
+
+<a style="color:blue" routerLink='/padinationdemo'> 
+     pagination with out ag grid demo 
+</a>
+<router-outlet></router-outlet>
